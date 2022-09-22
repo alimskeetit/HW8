@@ -5,7 +5,7 @@ namespace Task1
     class Program
     {
         public static DateTime dateTime;
-        public const int timeToDelete = 1;
+        public const int timeToDelete = 30;
         public static string generalPath;
         public static void Main()
         {
@@ -16,7 +16,6 @@ namespace Task1
                 Console.WriteLine("Данной папки не существует");
                 return;
             }
-
             dateTime = DateTime.Now.AddMinutes(timeToDelete);
             deleteDirsAndFiles(generalPath);
         }
